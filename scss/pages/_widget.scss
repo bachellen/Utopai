@@ -1,0 +1,65 @@
+
+
+.widget{
+    span{
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    .col-auto{
+        // background:#F7F8FC;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+    }
+    h4{
+        margin-bottom: 0px;
+    }
+}
+
+#usa_timeseries,
+#germany_timeseries,
+#italy_timeseries,
+#spain_timeseries,
+#france_timeseries,
+#china_timeseries
+{
+    height: 400px!important;
+}
+
+
+.jqvmap-label
+{
+    position: absolute;
+    display: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #292929;
+    color: white;
+    // font-size: smaller;
+    padding: 10px;
+    pointer-events:none;
+    z-index:999999;
+}
+
+
+
+
+#vmap {
+    width : 100%;
+    height: 400px;
+}
+
+.jqvmap-zoomin, .jqvmap-zoomout {
+    background: #000000;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+}
+
+.jqvmap-zoomout {
+    top: 35px;
+}

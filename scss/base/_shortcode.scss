@@ -1,0 +1,154 @@
+.section-padding {
+    padding: 100px 0;
+
+    @include respond('tab-land') {
+        padding: 80px 0;
+    }
+
+    @include respond('tab-port') {
+        padding: 75px 0;
+    }
+
+    @include respond('phone-land') {
+        padding: 60px 0;
+    }
+
+    @include respond('phone') {
+        padding: 50px 0;
+    }
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+
+.page_title {
+    padding    : 15px 0px 15px;
+    position   : relative;
+    background : transparent;
+    margin-top : 80px;
+    margin-left: 75px;
+
+    p {
+        font-size    : 18px;
+        font-weight  : 500;
+        margin-bottom: 0px;
+        color        : $primary;
+
+        // opacity: 0.6;
+        span {
+            line-height: 30px;
+            font-weight: 500;
+            color      : $white;
+            margin-left: 10px;
+            opacity    : 1;
+        }
+    }
+}
+
+
+// Scrollbar 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow   : inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background   : #999;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+
+
+
+.gradient-1 {
+    @extend %gradient-1;
+}
+
+.gradient-2 {
+    @extend %gradient-2;
+}
+
+.gradient-3 {
+    @extend %gradient-3;
+}
+
+.gradient-4 {
+    @extend %gradient-4;
+}
+
+.gradient-5 {
+    @extend %gradient-5;
+}
+
+.gradient-6 {
+    @extend %gradient-6;
+}
+
+.gradient-7 {
+    @extend %gradient-7;
+}
+
+.gradient-8 {
+    @extend %gradient-8;
+}
+
+.gradient-9 {
+    @extend %gradient-9;
+}
+
+.gradient-10 {
+    @extend %gradient-10;
+}
+
+.gradient-11 {
+    @extend %gradient-11;
+}
+
+.gradient-12 {
+    @extend %gradient-12;
+}
+
+.gradient-12 {
+    @extend %gradient-12;
+}
+
+.gradient-13 {
+    @extend %gradient-13;
+}
+
+.gradient-14 {
+    @extend %gradient-14;
+}
+
+.gradient-15 {
+    @extend %gradient-15;
+}
+
+.gradient-16 {
+    @extend %gradient-16;
+}
+

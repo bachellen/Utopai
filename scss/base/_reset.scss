@@ -1,0 +1,82 @@
+@import "../vendor/perfect-scrollbar/perfect-scrollbar.css";
+@import "../vendor/fixed-header-table/fixed-header-table.css";
+@import "../vendor/vectormap/jqvmap.css";
+
+* {
+    outline: none;
+    padding: 0;
+    &::after {
+        margin: 0;
+        padding: 0;
+    }
+    &::before {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    &.dashboard {
+        &:before {
+            content: "";
+            height: 300px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: fixed;
+            z-index: -9;
+            background: $primary;
+        }
+    }
+}
+
+#main-wrapper {
+    opacity: 0;
+    transition: all 0.25s ease-in;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    // height: 100vh;
+    padding-top: 60px;
+    &.show {
+        opacity: 1;
+    }
+}
+
+.content-body {
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $body-color;
+    text-decoration: none;
+    outline: none;
+    &:hover,
+    &:focus,
+    &.active {
+        text-decoration: none;
+        outline: none;
+        color: $primary;
+    }
+}
+
+
+@include respond('desktop'){
+    .container-fluid {
+        max-width: 85%;
+    }
+}
+
+
+/* Editable */

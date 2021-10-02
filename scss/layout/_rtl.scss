@@ -1,0 +1,81 @@
+html[dir="rtl"] {
+    [direction="rtl"] {
+
+        .header .navbar-brand span {
+            margin-left : 0px;
+            margin-right: 15px;
+        }
+        .header .navbar-brand {
+            margin-right: 0px;
+        }
+        .navbar-expand-lg .navbar-nav {
+            margin-right: auto;
+            margin-left : 0px;
+        }
+
+        .dropdown-menu {
+            text-align: right;
+        }
+
+        .navbar-nav .nav-item i {
+            right: 0px;
+            left : auto;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            padding: 10px 25px 10px 30px;
+        }
+
+        .update-time{
+            text-align: right;
+        }
+
+        .world-widget {
+            text-align: right;
+        }
+
+        .icon {
+            margin-left: 15px;
+        }
+
+        .country-statistics ul li span img {
+            margin-left: 10px;
+        }
+
+        .country-statistics h4 {
+            text-align: right;
+        }
+
+        .table th,
+        td {
+            text-align: right;
+        }
+
+        ul#news {
+            text-align: right;
+        }
+
+        ul#situation {
+            text-align: right;
+        }
+
+        div#country_flag {
+            img {
+                margin-left: 16px !important;
+                margin-right: 0px !important;
+            }
+        }
+        .country-data{
+            text-align: right;
+        }
+
+        .card-body.widget {
+            text-align: right;
+        }
+
+        .intro {
+            text-align: right;
+        }
+
+    }
+}

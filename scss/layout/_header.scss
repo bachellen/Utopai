@@ -1,0 +1,191 @@
+.header {
+    padding      : 0px 0px;
+    position     : fixed;
+    top          : 0;
+    left         : 0;
+    right        : 0;
+    z-index      : 999;
+    transition   : all 0.3s ease-in;
+    background   : $white;
+    border-bottom: 1px solid $border-color;
+    // &.landing{
+    //     background: rgba(255,255,255,0.5);
+    // }
+
+    .navbar-brand {
+        margin-right: 30px;
+        display     : flex;
+        align-items : center;
+
+        img {
+            max-width: 35px;
+        }
+
+        @include respond('tab-land') {
+            margin-right: 30px;
+        }
+
+        span {
+            // color   : $white;
+            font-weight: 700;
+            margin-left: 20px;
+            font-size  : 24px;
+        }
+    }
+}
+
+// .header_auth {
+//     .btn {
+//         margin-left: 10px;
+
+//         @include respond('tab-port') {
+//             padding  : 7px;
+//             min-width: 110px;
+//         }
+
+//         @include respond('phone') {
+//             display: none;
+//         }
+//     }
+// }
+
+// .dashboard_log {
+//     @include respond('tab-port') {
+//         position: fixed;
+//         right   : 105px;
+//         top     : 10px;
+//     }
+// }
+
+.navbar-toggler {
+    background: rgba(255, 255, 255, 0.2);
+    min-width : auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    @include respond('tab-port') {
+        // background   : #342C58;
+        margin-top      : 10px;
+        // border-radius: 16px;
+        padding         : 10px 0px;
+    }
+
+    .nav-item {
+        // display    : flex;
+        // align-items: center;
+
+        position: relative;
+
+        @include respond('phone-land') {
+            border-bottom: 1px solid $border-color;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        i {
+            position: absolute;
+            top     : 15px;
+            left    : 0px;
+        }
+
+        &.active {
+
+            i {
+                color: $primary !important;
+            }
+
+            a {
+                color: $primary !important;
+            }
+        }
+
+        .nav-link {
+            padding       : 10px 30px 10px 30px;
+            // color      : $white!important;
+            font-weight   : 500;
+            // opacity    : 0.75;
+            color         : $headings-color;
+
+
+            // @include respond('tab-port') {
+            //     padding: 10px 20px !important;
+            // }
+            // @include respond('tab-land') {
+            //     padding: 10px 15px !important;
+            // }
+            &:hover,
+            &:focus,
+            &.active {
+                opacity: 1;
+                color  : $primary !important;
+            }
+        }
+
+        .dropdown-menu {
+            border          : 0px;
+            padding         : 0px;
+            margin          : 0px;
+            top             : 55px;
+            width           : 175px;
+            box-shadow      : 0 36px 48px rgba($color: #1b1994, $alpha: 0.08);
+            border-radius   : 5px;
+            background-color: $white;
+
+            @include respond('phone-land') {
+                width     : 100%;
+                box-shadow: none;
+            }
+
+            .dropdown-item {
+                padding         : 10px 20px;
+                border-top      : 1px solid $border-color;
+                // font-size    : 16px;
+                color           : $body-color;
+                font-weight     : 500;
+
+                @include respond('phone-land') {
+                    padding: 10px 30px;
+                }
+
+                &:last-child {
+                    border: 0px;
+                }
+
+                &.logout {
+                    color: $danger;
+
+                    i {
+                        color: $danger;
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                    font-size   : 22px;
+                    color       : $primary;
+                    font-weight : bold;
+                }
+
+                &:hover,
+                &:focus,
+                &.active {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.dropdown-toggle {
+    &::after {
+        @include respond('phone-land') {
+            position: absolute;
+            top     : 20px;
+            right   : 10px;
+
+        }
+    }
+}

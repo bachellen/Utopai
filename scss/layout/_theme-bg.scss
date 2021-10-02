@@ -1,0 +1,173 @@
+//background for header
+
+@each $name,
+$color in $theme_backgrounds {
+    [data-bodybg="#{$name}"] {
+        @if $name !="color_1" {
+            $body-bg       : $color;
+            $body-color    : rgba(255, 255, 255, 0.65);
+            $headings-color: $white;
+
+            background-color: $body-bg !important;
+            color           : $body-color !important;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            .h1,
+            .h2,
+            .h3,
+            .h4,
+            .h5,
+            .h6 {
+                color: $headings-color
+            }
+
+            a {
+                color: $body-color;
+            }
+
+            .header {
+                background: lighten($body-bg, 3%) !important;
+            }
+
+            .navbar-light .navbar-brand {
+                color: $white;
+            }
+
+            .navbar-nav .nav-item .nav-link {
+                color: $headings-color;
+            }
+
+            .dropdown-menu {
+                background-color: darken($body-bg, 3%) !important;
+                box-shadow      : 0 36px 48px rgba($color: #1b1994, $alpha: 0.08);
+
+                .dropdown-item {
+                    color: $body-color !important;
+                }
+            }
+
+            .demo_img {
+                a {
+                    background: darken($body-bg, 5%);
+                }
+            }
+
+
+            .card {
+                background-color: lighten($body-bg, 3%) !important;
+
+                .card-header {
+                    background-color: lighten($body-bg, 3%) !important;
+                }
+
+                .card-body {
+                    background-color: lighten($body-bg, 3%) !important;
+                }
+            }
+
+            .world-widget {
+                background-color: lighten($body-bg, 3%) !important;
+            }
+
+            .country-statistics ul li {
+                background-color: lighten($body-bg, 3%) !important;
+            }
+
+            .table {
+                color: $body-color;
+            }
+
+            .table-striped tbody tr:nth-of-type(odd) {
+                background-color: $body-bg;
+            }
+
+            .form-control {
+                background: $body-bg !important;
+            }
+
+            .country-data {
+                background-color: lighten($body-bg, 3%) !important;
+            }
+
+
+        }
+
+
+
+
+    }
+}
+
+// //background for nav header
+// @each $name,
+// $color in $theme_primary_color {
+//     [data-primary-color="#{$name}"] {
+//         @if $name !="color_1" {
+//             .btn-primary {
+//                 background-color: $color;
+//                 border-color    : $color;
+
+//                 &:hover,
+//                 &:focus,
+//                 &:active,
+//                 &.active {
+//                     background-color: darken($color, 10%);
+//                     border-color    : darken($color, 10%);
+//                     box-shadow      : none;
+//                 }
+
+//                 &:not(:disabled):not(.disabled):active,
+//                 &:not(:disabled):not(.disabled).active {
+//                     background-color: darken($color, 10%);
+//                     border-color    : darken($color, 10%);
+//                     box-shadow      : none;
+//                 }
+//             }
+
+//             .btn-outline-primary {
+//                 background-color: transparent;
+//                 color           : $color;
+//                 border-color    : $color;
+
+//                 &:hover,
+//                 &:focus,
+//                 &:active,
+//                 &.active {
+//                     background-color: darken($color, 10%);
+//                     border-color    : darken($color, 10%);
+//                     box-shadow      : none;
+//                     color           : $white;
+//                 }
+
+//                 &:not(:disabled):not(.disabled):active,
+//                 &:not(:disabled):not(.disabled).active {
+//                     background-color: darken($color, 10%);
+//                     border-color    : darken($color, 10%);
+//                     box-shadow      : none;
+//                     color           : $white;
+//                 }
+//             }
+
+
+//             i.fa,
+//             .fas,
+//             .fab,
+//             .text-primary {
+//                 color: $color !important;
+//             }
+
+//             .bg-primary {
+//                 background-color: $color !important;
+//             }
+
+
+
+
+//         }
+//     }
+// }

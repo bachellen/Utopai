@@ -1,0 +1,29 @@
+.card {
+    border          : 0px;
+    margin-bottom   : 20px;
+    border-radius   : 5px;
+    // box-shadow   : 0px 36px 48px rgba(31, 66, 135, 0.04);
+    background-color: $white;
+
+    &-header {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        border-bottom  : 1px solid $border-color;
+        background     : $white;
+        padding        : 20px 20px;
+    }
+
+    &-title {
+        font-size    : 18px;
+        margin-bottom: 0px;
+        // color     : #ffffff;
+        font-weight  : 500;
+    }
+
+    .card-body {
+        padding         : 20px;
+        background-color: $white;
+        border-radius   : 5px;
+    }
+}

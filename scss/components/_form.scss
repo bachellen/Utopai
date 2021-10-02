@@ -1,0 +1,118 @@
+.form-group {
+    margin-bottom: 30px;
+    position     : relative;
+
+    label {
+        font-size    : 16px;
+        font-weight  : 600;
+        color        : $headings-color;
+        margin-bottom: 15px;
+        background   : transparent;
+        border-color : $border-color;
+    }
+}
+
+.form-control {
+    border-radius: 4px;
+    // height       : 50px;
+    border       : 1px solid $border-color;
+    padding      : 0px 22px;
+    // font-size    : 16px;
+    font-weight  : 500;
+    color        : $dark;
+    transition   : all 0.3s ease-in-out;
+    background   : $white;
+
+    .select {
+        padding: 12px 0;
+    }
+
+    span {
+        margin-top: 0;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $text-muted;
+    }
+
+    &:-ms-input-placeholder {
+        color: $text-muted;
+    }
+
+    &::placeholder {
+        color: $text-muted;
+    }
+
+    &:hover {
+        box-shadow  : none !important;
+        outline     : none;
+        border-color: $border-color;
+        color       : $dark;
+        background  : $white;
+    }
+
+    &:focus,
+    &:active,
+    &.active {
+        box-shadow  : none !important;
+        outline     : none;
+        border-color: $primary;
+        color       : $dark;
+        background  : $white;
+    }
+}
+
+input:-internal-autofill-selected {
+    background      : lighten($body-bg, 2%) !important;
+    background-image: none !important;
+    color           : -internal-light-dark-color(black, white) !important;
+}
+
+// span {
+//     margin-top : 20px;
+//     font-size  : 18px;
+//     font-weight: 400;
+//     color      : $text-muted;
+//     display    : inline-block;
+// }
+.input-group-text {
+    font-size    : 20px !important;
+    padding      : 5px 15px;
+    background  : $white;
+    margin-bottom: 0px !important;
+    color        : $dark;
+    border-color : $border-color;
+}
+
+.input-group-append {
+    .input-group-text {
+        border-top-right-radius   : 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.input-group-prepend {
+    .input-group-text {
+        border-top-left-radius   : 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+
+
+// Nice Select
+.nice-select {
+    display    : flex;
+    align-items: center;
+
+    ul {
+        width: 100% !important;
+    }
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: lighten($primary, 45%);
+    color           : $primary;
+}
